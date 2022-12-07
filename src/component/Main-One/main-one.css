@@ -1,0 +1,188 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.main-one-container {
+    max-width: 100%;
+    width: 100vw;
+    padding-top: 156px;
+    padding-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 778px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.main-one-left {
+    max-width: 60%;
+    width: 100%;
+    padding-top: 2%;
+}
+
+.simple-secure>h1 {
+    font-size: 33px;
+    font-weight: 400;
+    line-height: 43px;
+    /* width: 100%; */
+}
+
+#p-with {
+    margin: 30px 0;
+    font-size: 18px;
+    line-height: 26px;
+}
+
+#p-star {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 21.44px;
+    font-family: Helvetica, Arial, sans-serif;
+    color: rgb(94, 94, 94);
+}
+
+.icons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    width: inherit;
+    margin-top: 48px;
+}
+
+.icons>div {
+    margin: 10px 0;
+}
+
+.svg-icon-devices {
+    padding-right: 16px;
+}
+
+.devices-names {
+    color: #1CB39B;
+    font-size: 18px;
+    line-height: 21.6px;
+    cursor: pointer;
+}
+
+.devices-names:hover {
+    text-decoration: underline;
+}
+
+.main-one-right {
+    max-width: 100%;
+    width: 100%;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.big-whatsapp {
+    max-width: 304px;
+    width: 90%;
+}
+.big-what, .download-button, .big-whatsapp-mobile{
+    display: none;
+}
+/* ------------mobile------------- */
+
+@media screen and (max-width: 767px) {
+
+    .wrapper,
+    .main-one-container {
+        display: flex;
+        flex-direction: column;
+        background-color: #128C7E;
+        justify-content: center;
+        align-items: center;
+        padding-top: 44px;
+    }
+    .big-whatsapp-mobile{
+        display: block;
+    }
+    #p-star,
+    .icons, .big-whatsapp-tablet {
+        display: none;
+    }
+
+    .big-what{
+        display: block;
+        transform: scale(2.15);
+        margin-bottom: 35px;
+        cursor: pointer;
+    }
+
+    .main-one-left {
+        text-align: center;
+        color: #ffffff;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        max-width: 80%;
+    }
+    .simple-secure{
+        width: inherit;
+    }
+    .simple-secure>h1 {
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 31px;
+        cursor: default;
+    }
+
+    .simple-secure>#p-with {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 26px;
+    }
+    .download-button{
+        display: block;
+        background-color: #075E54;
+        padding: 1rem;
+        border-radius: 40px;
+        margin-bottom: 40px;
+        cursor: pointer;
+    }
+
+    .download-button>a{
+        text-decoration: none;
+    }
+    .download-button>a>span{
+        line-height: 19.2px;
+        color: #ffffff;
+        text-decoration: none;
+    }
+}
+
+/* -----------------tablet----------------- */
+@media screen and (min-width: 767px) and (max-width:1024px){
+    #p-with, #p-star, .simple-secure{
+        max-width: 307px;
+    }
+    .simple-secure{
+        margin: 0;
+    }
+    .main-one-right > img{
+        max-width: 255px;
+    }
+    .main-one-container{
+        padding-top: 122px;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    .wrapper{
+        align-items:flex-start
+    }
+    .main-one-left{
+        padding-top: 39px;
+    }
+}

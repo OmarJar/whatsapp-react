@@ -1,0 +1,210 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto, "Helvetica Neue", "Helvetica", Arial, sans-serif;
+}
+
+.second-part {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.third-container {
+    max-width: 100%;
+    width: 100%;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.inner-container {
+    max-width: 95%;
+    width: 100%;
+    margin: 0 auto;
+    align-items: center;
+    display: flex;
+    padding-top: 50px;
+}
+
+.left-business {
+    background-color: #D8E8EA;
+    max-width: 50%;
+
+    height: 937px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: 16px;
+    margin-bottom: 50px;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 80px;
+    display: flex;
+}
+
+.left-business>h1 {
+    font-size: 34px;
+    font-weight: 700;
+    line-height: 44px;
+    color: rgb(28, 30, 33);
+}
+
+.left-business>.whatsapp-business {
+    font-size: 18px;
+    line-height: 26px;
+    color: rgb(28, 30, 33);
+    padding: 30px 65px;
+    text-align: center;
+}
+
+.left-business>:nth-child(3) {
+    padding-bottom: 104px;
+    padding-top: 6px;
+    margin-top: 6px;
+}
+
+.left-business>.whatsapp-business>span {
+    color: #39B3ED;
+    line-height: 21.6px;
+}
+
+.catalog {
+    max-width: 600px;
+    width: 50%;
+    max-height: 657px;
+    height: 100%;
+    overflow: auto;
+}
+
+.circle-emoji {
+    background-color: #E7F0E4;
+    max-width: 50%;
+
+    height: 937px;
+    width: 100%;
+
+    margin-left: 16px;
+    margin-right: auto;
+    margin-bottom: 50px;
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+    padding-top: 80px;
+}
+
+.circle {
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    background-color: #77D7C8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.circle-emoji>h3 {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 34px;
+    color: rgb(94, 94, 94);
+    width: inherit;
+    text-align: center;
+    margin-top: 50px;
+    letter-spacing: 2px;
+}
+
+.circle-emoji>h1 {
+    font-size: 34px;
+    font-weight: 700;
+    line-height: 44px;
+    color: rgb(28, 30, 33);
+    margin-bottom: 40px;
+}
+
+.circle-emoji>p {
+    font-size: 18px;
+    line-height: 26px;
+    color: rgb(28, 30, 33);
+    max-width: 80%;
+    text-align: center;
+}
+
+@media screen and (max-width:1440px) {
+    .inner-container {
+        margin: 0;
+        max-width: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
+
+@media screen and (max-width:767px) {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .inner-container {
+        display: block;
+        max-width: 100%;
+        padding-top: 0;
+    }
+
+    .left-business {
+        max-width: 100%;
+
+        margin: 0;
+        height: fit-content;
+    }
+
+    .left-business>h1 {
+        font-size: 26px;
+        font-weight: 700;
+        line-height: 36px;
+    }
+
+    .second-part>div>div>div.left-business>p {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 26px;
+        max-width: 600px;
+        width: 80%;
+        padding: 10px 0;
+    }
+
+    .catalog {
+        max-width: 600px;
+        width: 80%;
+        max-height: 657px;
+        height: 100%;
+    }
+
+    .circle-emoji {
+        max-width: 100%;
+        width: 100%;
+        max-height: auto;
+        height:fit-content;
+        padding-bottom: 48px;
+        margin: 0;
+    }
+
+    .circle-emoji>p {
+        font-size: 16px;
+    }
+
+    .circle {
+        width: 273px;
+        height: 273px;
+    }
+
+    .circle>img {
+        width: 176px;
+        height: 51px;
+    }
+}

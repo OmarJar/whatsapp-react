@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.third-part {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.third-part>a {
+    text-decoration: none;
+    color: #128C7E;
+    font-size: 16px;
+    line-height: 19.2px;
+    border: 2px solid#77D7C8;
+    padding: 17px 33px;
+    border-radius: 30px;
+    margin-bottom: 100px;
+}
+
+@media screen and (max-width:767px){
+    .third-part > a{
+        margin: 32px 0 56px 0;
+    }
+}

@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100vw;
+    width: 100%;
+    margin: 0 auto;
+    position: fixed;
+    height: 91px;
+    background-color: #128C7E;
+    top: 0;
+}
+
+.navbar {
+    max-width: 1090px;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    padding: 0 10px;
+}
+
+.brand {
+    justify-content: flex-start;
+}
+
+h5 {
+    text-decoration: none;
+    color: #ffffff;
+    font-family: Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 26px;
+    color: rgb(255, 255, 255);
+}
+
+.list {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    max-width: 818.5px;
+    width: 95vw;
+}
+
+.list-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.languages-items {
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.languages-items>* {
+    padding: 1.5px;
+}
+
+.en {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    color: #ffffff;
+}
+.burger-menu, #nav-tab{
+    display: none;
+}
+
+/* -----------mobile------------ */
+
+@media screen and (max-width:767px){
+    .brand, .languages-items, .list{
+        display: none;
+    }
+    #nav-img{
+        display: none;
+    }
+    header{
+        display: flex;
+        align-items: center;
+        justify-content: right;
+        
+    }
+
+    nav{
+        width: 100%;
+        height: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items:flex-start;
+        /* padding-top: 100px; */
+    }
+    .list-item:hover{
+        text-decoration: underline;
+    }
+    .navbar{
+        width: 150px;
+        
+    }
+    .burger-menu{
+        justify-content: center;
+        align-items: flex-end;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        cursor: pointer;
+        position: absolute;
+        top: 20px;
+        right: 10%;
+    }
+    
+}
+
+
+/* ---------------tablet-------------- */
+
+@media screen and (min-width:767px) and (max-width:1024px){
+    .list > div > span > h5{
+        font-size: 14px;
+        line-height: 16px;
+    }
+    .list{
+        max-width: 614px;
+        justify-content: space-around;
+    }
+    .navbar{
+        justify-content: space-around;
+        padding: 0 30px;
+    }
+    nav{
+        max-height: 74px;
+    }
+    .brand > img{
+        width: 35px;  
+    }
+    #nav-tab{
+        display: block;
+    }
+    #nav-img, .languages-items>span, #down-img{
+        display: none;
+    }   
+}

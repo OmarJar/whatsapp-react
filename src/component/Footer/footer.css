@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+footer {
+    max-height: 407px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.top-foot {
+    background-color: #273443;
+    justify-content: center;
+    width: inherit;
+    padding: 56px 20px;
+    display: flex;
+}
+
+.foot-menu {
+    display: grid;
+    grid-template: auto auto / repeat(4, 1fr);
+    column-gap: 140px;
+}
+
+.foot-menu>ul {
+    list-style: none;
+    text-align: left;
+    width: fit-content;
+}
+
+.foot-menu>ul>li:nth-child(1) {
+    margin-bottom: 32px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 17px;
+    color: #F0F4F9;
+    letter-spacing: 1px;
+    cursor: default;
+}
+
+.foot-menu>ul>li:not(:first-child) {
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+.foot-menu>ul>li:not(:first-child):hover {
+    text-decoration: underline;
+}
+
+.foot-menu>ul>li:last-child {
+    margin-bottom: 0px;
+}
+
+.foot-menu>ul>li {
+    font-size: 18px;
+    line-height: 26px;
+    color: rgb(255, 255, 255);
+}
+
+.footer-ul {
+    display: flex;
+    flex-direction: column;
+}
+
+.bottom-foot {
+    justify-content: space-around;
+    height: 66px;
+    background-color: #1C1E21;
+    width: 100%;
+    display: flex;
+    color: #FFFFFF;
+
+}
+
+.bottom-foot>.dodo>h4 {
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    line-height: 26px;
+    cursor: default;
+    font-weight: 400;
+}
+
+.dodo {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 235px;
+}
+
+.bottom-foot>.dodo>.privacy-terms {
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19px;
+}
+
+.bottom-foot>.dodo>.privacy-terms>a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+
+@media screen and (max-width:767px) {
+    .foot-menu {
+        display: grid;
+        grid-template: auto auto / repeat(2, 1fr);
+        column-gap: 80px;
+        row-gap: 50px;
+    }
+
+    .top-foot {
+        justify-content: left;
+        padding-left: 30px;
+        max-height: 606px;
+        height: 100%;
+    }
+
+    .bottom-foot {
+        max-height: 109px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 30px 0;
+    }
+
+    .dodo {
+        margin: 0;
+        display: block;
+        padding: 20px 10px 10px 30px;
+    }
+
+    .dodo>h4 {
+        margin-bottom: 10px;
+    }
+}

@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.sidebar {
+    display: block;
+    color: #ffffff;
+    border-bottom: #ffffff 1px solid;
+    background-color: #128C7E;
+}
+
+.new-nav-order {
+    display: none;
+}
+
+#sidebar-list, #close-btn, .new-order-list {
+    display: none;
+}
+
+/* --------------tablet------------ */
+
+@media screen and (min-width:767px) and (max-width:1024px){
+    .new-order-list{
+        display: none;
+    }
+}
+
+/* ----------------mobile----------------- */
+
+@media screen and (max-width:767px) {
+    .new-nav-order, .new-order-list{
+        display: block;
+    }
+    .sidebar{
+        background-color: #075E54;
+        padding: 20px 0;
+        margin-left: 55px;
+        border-bottom: 1px solid #128c7e;
+        width: 80%;
+    }
+
+    .sidebar>a{
+        cursor: pointer;
+        color: #ffffff;
+        text-decoration: none;
+        display: block;
+    }
+    .sidebar>a:hover{
+        text-decoration: underline;
+    }
+    #sidebar-list{
+        display: block;
+        height: 100%;
+        width: 0;
+        max-width: 100%;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        right: 0;
+        background-color: #075E54;
+        overflow-x: hidden;
+        transition: 0.4s ease-in-out;
+    }
+    #close-btn{
+        font-size: 36px;
+        text-align: right;
+    }
+    .burger-menu{
+        position: absolute;
+        right: 33px;
+        width: fit-content;
+    }
+    .mobile-bar{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 90%;
+        margin: 20px auto 20px ;
+    }
+    .mobile-bar>img{
+        width: 2.3rem;
+    }
+    .select{
+        position: absolute;
+        max-width: 156px;
+        margin-top: 70px;
+        padding: 8px 16px;
+        border: 2px solid #ffffff;
+        border-radius: 4px;
+        background-color: #075E54;
+        color: #ffffff;
+        font-size: 12px;
+        font-weight: bold;
+    }
+}
