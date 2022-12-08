@@ -1,6 +1,6 @@
 import React from "react"
 import "./main-three.css"
-import database from "../../data"
+import database from "../../../data"
 
 export default function MainThree() {
     return (

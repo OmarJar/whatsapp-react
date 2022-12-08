@@ -3,7 +3,7 @@ import "./navbar.css"
 import "../PopUp/popup.css"
 import ListItem from "./ListItem/ListItem"
 import data from "./ListItem/data"
-import database from "../../data"
+import database from "../../../data"
 
 function toggleDiv() {
     const div = document.getElementById("pop")

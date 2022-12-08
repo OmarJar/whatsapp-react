@@ -2,7 +2,7 @@ import React from "react"
 import "./footer.css"
 import { whatsApp, company, download, help } from "./menus"
 import FooterItem from "./FooterItem"
-import database from "../../data"
+import database from "../../../data"
 
 export default function Footer() {
     const whatsAppCol = whatsApp.map(element=><FooterItem key={element.id}{...element}/>)

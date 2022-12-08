@@ -2,7 +2,7 @@ import React from "react"
 import "./main-one.css"
 import data from "./Icons/data"
 import Icons from "./Icons/Icons"
-import database from "../../data"
+import database from "../../../data"
 
 export default function MainOne() {
     const { bigWhat, simple, reliable, pWith, pStar, bigImg, whatsAppCut, downloadNow } = database

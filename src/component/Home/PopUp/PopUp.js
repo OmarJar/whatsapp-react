@@ -1,7 +1,7 @@
 import React from "react"
 import "./popup.css"
 import languages from "./Languages"
-import database from "../../data"
+import database from "../../../data"
 import { toggleDiv } from "../Navbar/Navbar"
 
 const PopUp = () => {
