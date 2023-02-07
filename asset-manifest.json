@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/omarjar/github.io/whatsapp-react/static/css/main.993f5d69.css",
+    "main.js": "/omarjar/github.io/whatsapp-react/static/js/main.319ddc44.js",
+    "index.html": "/omarjar/github.io/whatsapp-react/index.html",
+    "main.993f5d69.css.map": "/omarjar/github.io/whatsapp-react/static/css/main.993f5d69.css.map",
+    "main.319ddc44.js.map": "/omarjar/github.io/whatsapp-react/static/js/main.319ddc44.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.993f5d69.css",
+    "static/js/main.319ddc44.js"
+  ]
+}
