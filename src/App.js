@@ -6,7 +6,7 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/whatsapp-react" element={<Home />} />
+        <Route path="/whatsapp-react/" element={<Home />} />
       </Routes>
     </BrowserRouter>
   )
